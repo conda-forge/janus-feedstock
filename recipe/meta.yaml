@@ -1,18 +1,18 @@
 {% set name = "janus" %}
-{% set version = "0.4.0" %}
+{% set version = "0.6.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cfc221683160b91b35bae1917e2957b78dad10a2e634f4f8ed119ed72e2a88ef
+  sha256: 4712e0ef75711fe5947c2db855bc96221a9a03641b52e5ae8e25c2b705dd1d0c
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
