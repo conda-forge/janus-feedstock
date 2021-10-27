@@ -1,5 +1,5 @@
 {% set name = "janus" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4712e0ef75711fe5947c2db855bc96221a9a03641b52e5ae8e25c2b705dd1d0c
+  sha256: 127edc891f9e13420dd12f230d5113fa3de7f93662b81acfaf845989edf5eebf
 
 build:
   number: 0
