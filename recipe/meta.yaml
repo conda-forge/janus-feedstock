@@ -20,6 +20,7 @@ requirements:
     - python >=3.5.3
   run:
     - python >=3.5.3
+    - typing_extensions
 
 test:
   imports:
@@ -27,8 +28,7 @@ test:
 
 about:
   home: https://github.com/aio-libs/janus/
-  license: Apache Software
-  license_family: APACHE
+  license: Apache-2.0
   license_file: LICENSE
   summary: Mixed sync-async queue to interoperate between asyncio tasks and classic threads
 
