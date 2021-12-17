@@ -1,5 +1,5 @@
 {% set name = "janus" %}
-{% set version = "0.6.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 127edc891f9e13420dd12f230d5113fa3de7f93662b81acfaf845989edf5eebf
+  sha256: df976f2cdcfb034b147a2d51edfc34ff6bfb12d4e2643d3ad0e10de058cb1612
 
 build:
   number: 0
@@ -17,9 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5.3
+    - python >=3.7
   run:
-    - python >=3.5.3
+    - python >=3.7
+    - typing_extensions >=3.7.4.3
 
 test:
   imports:
@@ -27,12 +28,11 @@ test:
 
 about:
   home: https://github.com/aio-libs/janus/
-  license: Apache Software
-  license_family: APACHE
+  license: Apache-2.0
   license_file: LICENSE
   summary: Mixed sync-async queue to interoperate between asyncio tasks and classic threads
 
 extra:
   recipe-maintainers:
     - epruesse
-    - thewchan 
+    - thewchan
