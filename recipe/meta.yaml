@@ -1,5 +1,5 @@
 {% set name = "janus" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: df976f2cdcfb034b147a2d51edfc34ff6bfb12d4e2643d3ad0e10de058cb1612
+  sha256: 0634df8b2b31f8afda4311abcf7fea912686fef717d13769eeaa01ae08d2b84c
 
 build:
   number: 0
@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools
   run:
     - python >=3.7
     - typing_extensions >=3.7.4.3
