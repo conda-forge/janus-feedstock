@@ -1,13 +1,13 @@
 {% set name = "janus" %}
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0634df8b2b31f8afda4311abcf7fea912686fef717d13769eeaa01ae08d2b84c
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0970f38e0e725400496c834a368a67ee551dc3b5ad0a257e132f5b46f2e77770
 
 build:
   number: 0
